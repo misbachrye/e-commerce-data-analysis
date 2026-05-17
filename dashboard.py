@@ -113,7 +113,7 @@ else:
         with col2:
             st.markdown("**Bottom 5 Kategori Produk (Terendah)**")
             fig, ax = plt.subplots(figsize=(10, 6))
-            colors_bottom = ["#d62728", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
+            colors_bottom = ["#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#d62728"] # INI BENAR
             
             bottom_data = revenue_df.tail(5) if len(revenue_df) >= 5 else revenue_df
             sns.barplot(
